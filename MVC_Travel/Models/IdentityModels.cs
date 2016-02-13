@@ -42,11 +42,11 @@ namespace MVC_Travel.Models
         //////////////////////////////
         protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("NAM");
+            modelBuilder.HasDefaultSchema("Tropica");
 
             modelBuilder.Entity<ApplicationUserLogin>().Map(c =>
             {
-                c.ToTable("UserLogin");
+                c.ToTable("DefaultAsp_UserLogin");
                 c.Properties(p => new
                 {
                     p.UserId,
@@ -58,7 +58,7 @@ namespace MVC_Travel.Models
             // Mapping for ApiRole
             modelBuilder.Entity<ApplicationRole>().Map(c =>
             {
-                c.ToTable("Role");
+                c.ToTable("DefaultAsp_Role");
                 c.Property(p => p.Id).HasColumnName("RoleId");
                 c.Properties(p => new
                 {
@@ -92,7 +92,7 @@ namespace MVC_Travel.Models
 
             modelBuilder.Entity<ApplicationUserRole>().Map(c =>
             {
-                c.ToTable("UserRole");
+                c.ToTable("DefaultAsp_UserRole");
                 c.Properties(p => new
                 {
                     p.UserId,
@@ -103,7 +103,7 @@ namespace MVC_Travel.Models
 
             modelBuilder.Entity<ApplicationUserClaim>().Map(c =>
             {
-                c.ToTable("UserClaim");
+                c.ToTable("DefaultAsp_UserClaim");
                 c.Property(p => p.Id).HasColumnName("UserClaimId");
                 c.Properties(p => new
                 {
