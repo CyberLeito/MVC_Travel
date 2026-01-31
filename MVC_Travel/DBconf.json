@@ -5,5 +5,12 @@
   
   "loggerCS16": "2026-06-30",
   "coldStorageViewer": "2025-03-15",
-  "hmiMonitor": "2026-01-01"
+  "hmiMonitor": "2026-01-01",
+
+
+
+  "ViewerCS08_KFC_Beta": "2026-12-14",
+  "Comment_02": "for demo use for the QA people"
+  
+  
 }
